@@ -30,5 +30,5 @@ You can ask questions based on keywords <br>
 You can click on 'Yes' to ask more questions, when bot asks 'Can I help you with anything else?'
 
 ###Heroku link:
-(https://chat601nsl.herokuapp.com/)
+(https://wsdfp.herokuapp.com/)
  
