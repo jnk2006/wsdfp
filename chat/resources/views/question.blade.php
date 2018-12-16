@@ -12,9 +12,13 @@
 
                     <div class="card-footer">
                         <a class="btn btn-primary float-right"
-                           href="#">
+                           href="{{ route('question.edit',['id'=> $question->id])}}">
                             Edit Question
                         </a>
+                        {{ Form::open(['method' => 'DELETE', 'route' => ['question.destroy', $question->id]])}}
+                        <button class="btn btn-danger float-right mr-2" value="sumit" id="sumit">Delete
+                        </button>
+                        {!! Form::close() !!}
 
                     </div>
                 </div>
@@ -47,4 +51,3 @@
         </div>
     </div>
 @endsection
-
