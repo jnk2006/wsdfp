@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Unnamed" type="PhpLocalRunConfigurationType" factoryName="PHP Console" nameIsGenerated="true" path="$PROJECT_DIR$/chat/artisan" scriptParameters="serve">
+  <configuration default="false" name="Unnamed" type="PhpLocalRunConfigurationType" factoryName="PHP Console" nameIsGenerated="true" path="$PROJECT_DIR$/artisan" scriptParameters="serve">
     <method v="2">
       <option name="LaunchBrowser.Before.Run" url="http://localhost:8000" />
     </method>
