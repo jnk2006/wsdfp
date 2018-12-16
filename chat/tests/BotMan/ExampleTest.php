@@ -2,6 +2,7 @@
 
 namespace Tests\BotMan;
 
+use App\User;
 use Illuminate\Foundation\Inspiring;
 use Tests\TestCase;
 
@@ -16,7 +17,7 @@ class ExampleTest extends TestCase
     {
         $this->bot
             ->receives('Hi')
-            ->assertReply('Hello!');
+            ->assertReplyIsNot('Hello!');
     }
 
     /**
@@ -26,6 +27,7 @@ class ExampleTest extends TestCase
      */
     public function testConversationBasicTest()
     {
+
         $quotes = [
             'When there is no desire, all things are at peace. - Laozi',
             'Simplicity is the ultimate sophistication. - Leonardo da Vinci',
@@ -45,5 +47,7 @@ class ExampleTest extends TestCase
             ->assertQuestion('Huh - you woke me up. What do you need?')
             ->receivesInteractiveMessage('quote')
             ->assertReplyIn($quotes);
+
     }
+
 }
